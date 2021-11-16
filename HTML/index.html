@@ -4,9 +4,27 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "../CSS/WCG.css">
+        <script defer src = "../JS/WCG.js"></script>
         <title> 끝말잇기 </title>
     </head>
+
     <body>
-        
+        <div class = "hidden"><span id = "start__number"></span>명이서 하는 끝말잇기</div>
+        <form id = "player__number">
+            <input 
+                type = "text" 
+                maxlength = "2"
+                placeholder = "참가할 사람 수" 
+                required
+            />
+            <button class = "submit">입력</button> 
+        </form>
+        <div>참가자<span id = "order">1</span></div>
+        <div>제시어:<span id = "word"></span></div>
+        <form id = "answer" class = "hidden">
+            <input type = "text" placeholder = "단어를 입력하세요." required>
+            <button class = "submit">입력</button>        
+        </form>
     </body>
 </html>
